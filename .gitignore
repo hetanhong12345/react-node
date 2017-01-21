@@ -1,0 +1,9 @@
+# 忽略 node_mudules目录
+node_modules/
+.vscode/
+uploads/
+public/bundle.js
+logs/log-info.log
+logs/log-error.log
+upload/xls/xlsx*.xlsx
+

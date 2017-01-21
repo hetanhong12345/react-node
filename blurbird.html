@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="getTest()" style="width: 200px;height: 100px"> get test</button>
+<button onclick="getHtml()" style="width: 200px;height: 100px"> get html</button>
+
+</body>
+<script>
+    function getTest() {
+        fetch('/test')
+            .then(function (res) {
+                return res.json()
+            }).then(function (data) {
+            console.log(data);
+        }).catch(function (err) {
+            console.log(err)
+        })
+
+    }
+    function getHtml() {
+        fetch('/html')
+            .then(function (res) {
+                return res
+            }).then(function (data) {
+            console.log(data);
+        }).catch(function (err) {
+            console.log(err)
+        })
+
+    }
+</script>
+</html>
