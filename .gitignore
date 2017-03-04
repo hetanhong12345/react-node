@@ -6,4 +6,5 @@ public/bundle.js
 logs/log-info.log
 logs/log-error.log
 upload/xls/xlsx*.xlsx
+.idea/
 
